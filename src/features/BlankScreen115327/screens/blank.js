@@ -26,17 +26,16 @@ export default class Blank extends React.Component {
   state = {}
 
   render = () => (
-    <View>
-      <Icon name="address-card" />
-      <Icon name="adjust" />
-      <Icon name="exclamation-circle" />
-    </View>
+    <ImageBackground
+      source={{
+        uri:
+          "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/8_bO6C6gj.jpg"
+      }}
+      style={styles.ImageBackground_1}
+    />
   )
 }
 
 const styles = StyleSheet.create({
-  View_1: {},
-  Icon_2: {},
-  Icon_3: {},
-  Icon_4: {}
+  ImageBackground_1: { backgroundSize: "stretch" }
 })
